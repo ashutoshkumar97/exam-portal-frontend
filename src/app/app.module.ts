@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-import { RegisterComponent } from './pages/register/register.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { SigninComponent } from './pages/signin/signin.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
+// Angular Components
+import { HomeComponent } from './pages/home/home.component';
+import { SigninComponent } from './pages/signin/signin.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+// Angular Material UI Components
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+// Angular Form
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +29,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     NavbarComponent,
     FooterComponent,
     SigninComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +41,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     FormsModule,
     HttpClientModule,
     MatSnackBarModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
